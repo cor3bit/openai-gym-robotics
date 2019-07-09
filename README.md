@@ -1,2 +1,4 @@
-# openai-gym-robotics
-Experiments with OpenAI Robotics Environment
+# Experiments with OpenAI Robotics Environment
+1) Training Ant-v2 (make a four-legged 
+creature walk forward as fast as possible).
+https://gym.openai.com/envs/Ant-v2/
