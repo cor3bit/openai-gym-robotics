@@ -1,24 +1,19 @@
 import gym
 
+from src.models.rlagent import RlAgent
 
 def train_robot():
+    # initializes env
     env = gym.make('Ant-v2')
 
-    a = env.action_space
-    b = env.observation_space
-    print(b)
+    # initializes an RL agent with pre-trained weights
+    agent = RlAgent(method='dqn')
+    agent.train(env, n_episodes=5, save_weights=False)
 
-    for i_episode in range(5):
-        observation = env.reset()
-        for t in range(100):
-            # env.render()
-            # print(observation)
-            action = env.action_space.sample()
-            observation, reward, done, info = env.step(action)
-            if done:
-                print("Episode finished after {} timesteps".format(t + 1))
-                break
+    # runs trained agent
+    agent.run(env, n_episodes=5, render=True)
 
+    # post-processing
     env.close()
 
 
