@@ -1,6 +1,6 @@
 # TODO
 
-def dqn_train(env, n_episodes):
+def mcpg_train(env, n_episodes):
     a = env.action_space
     b = env.observation_space
     print(b)
@@ -18,5 +18,5 @@ def dqn_train(env, n_episodes):
                 break
 
 
-def dqn_predict(env, n_episodes):
+def mcpg_predict(env, n_episodes):
     pass
