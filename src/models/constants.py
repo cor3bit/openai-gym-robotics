@@ -1,4 +1,5 @@
 class ModelType:
-    MCPG = 'MC policy gradient'
+    RANDOM = 'Random Agent'
+    MCPG = 'MC Policy Gradient'
     DQN = 'Deep Q-Network'
-    TF_BASELINE = 'Tensorforce SAC'
+    EXT_BASELINE = 'Keras DDPG'

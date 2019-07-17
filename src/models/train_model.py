@@ -11,8 +11,8 @@ def train_robot():
     env = gym.make(ENV)
 
     # initializes an RL agent with pre-trained weights
-    agent = RlAgent(method=ModelType.TF_BASELINE)
-    agent.train(env, n_episodes=10000, save_weights=True)
+    agent = RlAgent(method=ModelType.EXT_BASELINE)
+    agent.train(env, n_episodes=100000, save_weights=True)
 
     # post-processing
     env.close()
@@ -23,7 +23,7 @@ def test_robot():
     env = gym.make(ENV)
 
     # initializes an RL agent with pre-trained weights
-    agent = RlAgent(method=ModelType.TF_BASELINE)
+    agent = RlAgent(method=ModelType.EXT_BASELINE)
     agent.run(env, n_episodes=5, render=True)
 
     # post-processing
