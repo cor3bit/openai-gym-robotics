@@ -6,4 +6,4 @@ https://gym.openai.com/envs/Ant-v2/
 
 Random Agent            |  Trained Keras-rl Agent     |
 :-------------------------:|:-------------------------:|
-![](data/external/random.gif)  |  ![](data/external/keras.gif) | ![](readme_files/after_doubleDQN.gif) 
+![](data/external/random.gif)  |  ![](data/external/keras.gif) |
